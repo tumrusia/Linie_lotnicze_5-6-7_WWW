@@ -1,0 +1,278 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*--------------------------------------*/
+
+.naglowek {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.naglowek .tytul {
+    background-color: aliceblue;
+    color: rgb(5, 5, 124);
+    font-family: arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    flex-basis: 67%;
+    padding: 2%;
+    margin: 1%;
+}
+
+.naglowek img {
+    width: 100px;
+}
+
+/*--------------------------------------*/
+
+
+#arrow {
+    width: 8%;
+    height: 8%;
+    margin-top: 8%;
+}
+
+.skad-dokad {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skad, .dokad {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.miasto-zdj {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.skad-dokad a {
+    padding: 3%;
+    background-color: rgb(217, 236, 252);
+    color: rgb(5, 5, 124);
+    font-family: arial, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.skad-dokad a .tytul {
+    color: gray;
+    font-size: 10px;
+    margin-left: 28%;
+    margin-right: 5%;
+    margin-top: 5px;
+}
+
+.skad-dokad .pogoda {
+    justify-content: center;
+}
+
+/*--------------------------------------*/
+
+.samolot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.zdjecia-samolot {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 27%;
+    margin: 20px 3% 20px 3%;
+}
+
+.zdjecia-samolot .zdjecie-gora {
+    display: flex;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.zdjecia-samolot .zdjecie-dol {
+    display: flex;
+    width: 100%;
+    margin-top: 5%;
+}
+
+.info-samolot {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 23%;
+    margin: 20px 3% 20px 3%;
+    padding: 2%;
+
+    background-color: rgb(217, 236, 252);
+    color: rgb(5, 5, 124);
+    font-family: arial, sans-serif;
+    font-size: 18px;
+    line-height: 160%;
+}
+
+.info {
+    padding: 1.5%;
+    margin-bottom: 5%;
+}
+
+.lista-pasazerow {
+    padding: 1.5%;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    margin-left: 3%;
+}
+
+body {
+    counter-reset: section;
+}
+
+.count:before {
+    counter-increment: section;
+    content: counter(section) ". ";
+}
+
+.count .popup {
+    display: none;
+    margin-left: 10px;
+    color: rgb(39, 170, 226);
+}
+
+.count:hover .popup {
+    display: flex;
+}
+
+/*--------------------------------------*/
+
+
+a:link, a:visited {
+    color: rgb(5, 5, 124);
+    text-decoration: none;
+}
+  
+a:hover, a:active {
+    color: rgb(83, 83, 146);
+    text-decoration: none;
+    background-color: rgb(39, 170, 226);
+}
+
+h2 {
+    display: flex;
+    background-color: aliceblue;
+    width: 88%;
+    padding: 1%;
+    margin-left: 5%;
+}
+
+footer {
+    background-color: aliceblue;
+    padding: 5px 10px;
+    font-family: arial, sans-serif;
+    font-size: 17px;
+    text-align: right;
+    color: rgb(61, 61, 61);
+}
+
+@media (max-width: 900px) {
+    .samolot {
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .zdjecia-samolot {
+        flex-direction: row;
+    }
+
+    .zdjecie-gora, .zdjecie-dol {
+        margin: 5%;
+    }
+
+    #arrow {
+        width: 8%;
+        height: 8%;
+        margin-top: 15%;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    .skad-dokad a {
+        font-size: 15px;
+    }
+
+    .skad-dokad a .tytul {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 500px) {
+    .naglowek .tytul {
+        font-size: 20px;
+    }
+
+    .naglowek img {
+        width: 60px;
+    }
+
+    .skad-dokad a {
+        font-size: 12px;
+    }
+    
+    .skad-dokad a .tytul {
+        font-size: 5px;
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+    .info-samolot {
+        font-size: 12px;
+    }
+
+    .miasto-zdj, a.pogoda {
+        display: none;
+    }
+
+    #arrow {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .naglowek .tytul {
+        font-size: 40px;
+    }
+
+    .naglowek img {
+        width: 110px;
+    }
+
+    .skad-dokad a {
+        font-size: 26px;
+    }
+    
+    .skad-dokad a .tytul {
+        font-size: 15px;
+        margin-top: 7px;
+    }
+
+    .info-samolot {
+        font-size: 26px;
+    }
+}

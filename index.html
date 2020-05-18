@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tabela lotów</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='tabela-lotow.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='rezerwacja-lotu.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='menu.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function setDefaultName() {
+            var imie = document.querySelector("input[name=fname]");
+            var nazwisko = document.querySelector("input[name=lname]");
+            imie.value = "Marta";
+            nazwisko.value = "Markocka";
+        }
+        document.addEventListener('DOMContentLoaded', setDefaultName);
+    </script>
+</head>
+<body>
+    <div class="parent-grid">
+        
+        <div class="menu">
+            <div class="logo">
+                <img src="logo.jpg" alt="logo" class="logo">
+            </div>
+            <a href="#">Strona główna</a>
+            <a href="#tabela-lotow">Tabela lotów</a>
+            <a href="#opoznienia">Opóźnienia</a>
+            <a href="#rezerwuj-lot">Rezerwuj lot</a>
+            <button class="dropdown-btn">O nas 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Nasza flota</a>
+                <a href="#">Nasza załoga</a>
+                <a href="#">Historia</a>
+            </div>
+            <a href="#">Kontakt</a>
+        </div>
+        
+        <div class="main tabela-lotow">
+            <a id="tabela-lotow"><header>Tabela lotów</header></a>
+            <table>
+                <tr>
+                    <th>Numer lotu</th>
+                    <th>Skąd</th>
+                    <th>Dokąd</th>
+                    <th>Data</th>
+                    <th>Godzina</th>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">KM 7171</a></td>
+                    <td>Rzym</td>
+                    <td>Kraków</td>
+                    <td>12.02.2020</td>
+                    <td>08:03</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">KM 1717</a></td>
+                    <td>Kraków</td>
+                    <td>Rzym</td>
+                    <td>08.02.2020</td>
+                    <td>14:55</td>
+                </tr>
+                <tr class="odwolany">
+                    <td><a href="lot1.html">SS 2222</a></td>
+                    <td>Warszawa</td>
+                    <td>Oslo</td>
+                    <td>09.02.2020</td>
+                    <td>08:29</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.02.2020</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.02.2020</td>
+                    <td>09:12</td>
+                </tr>
+                <tr class="troche-opozniony">
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.12.2019</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.12.2019</td>
+                    <td>09:12</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">MA 0717</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>01.10.2019</td>
+                    <td>20:14</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.06.2019</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.06.2019</td>
+                    <td>09:12</td>
+                </tr>
+                <tr class="bardzo-opozniony">
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.04.2019</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.04.2019</td>
+                    <td>09:12</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.02.2019</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">KK 1017</a></td>
+                    <td>Lwów</td>
+                    <td>Katowice</td>
+                    <td>06.02.2019</td>
+                    <td>15:47</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">KK 0171</a></td>
+                    <td>Katowice</td>
+                    <td>Lwów</td>
+                    <td>04.02.2019</td>
+                    <td>09:31</td>
+                </tr>
+                <tr class="troche-opozniony">
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.02.2019</td>
+                    <td>09:12</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.12.2018</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.12.2018</td>
+                    <td>09:12</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">MM 0717</a></td>
+                    <td>Warszawa</td>
+                    <td>Karlsruhe</td>
+                    <td>29.10.2018</td>
+                    <td>08:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">KA 1017</a></td>
+                    <td>Bruksela</td>
+                    <td>Warszawa</td>
+                    <td>23.09.2018</td>
+                    <td>05:48</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 2000</a></td>
+                    <td>Paryż</td>
+                    <td>Warszawa</td>
+                    <td>07.10.2018</td>
+                    <td>17:24</td>
+                </tr>
+                <tr>
+                    <td><a href="lot1.html">AK 1000</a></td>
+                    <td>Warszawa</td>
+                    <td>Paryż</td>
+                    <td>04.10.2018</td>
+                    <td>09:12</td>
+                </tr>
+                <tr class="odwolany">
+                    <td><a href="lot1.html">DE 1111</a></td>
+                    <td>Warszawa</td>
+                    <td>Oslo</td>
+                    <td>23.07.2018</td>
+                    <td>07:22</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <div class="delay">
+                <a id="opoznienia"><header>Opóźnienia</header></a>
+                <table>
+                    <tr>
+                        <th>Skąd</th>
+                        <th>Dokąd</th>
+                        <th>Kiedy</th>
+                        <th>Opóźnienie</th>
+                    </tr>
+                    <tr class="odwolany">
+                        <td>Warszawa</td>
+                        <td>Oslo</td>
+                        <td>09.02.2020</td>
+                        <td>odwołany</td>
+                    </tr>
+                    <tr class="troche-opozniony">
+                        <td>Paryż</td>
+                        <td>Warszawa</td>
+                        <td>07.12.2019</td>
+                        <td>opóźniony 15min</td>
+                    </tr>
+                    <tr class="bardzo-opozniony">
+                        <td>Paryż</td>
+                        <td>Warszawa</td>
+                        <td>07.04.2019</td>
+                        <td>opóźniony 50min</td>
+                    </tr>
+                    <tr class="troche-opozniony">
+                        <td>Warszawa</td>
+                        <td>Paryż</td>
+                        <td>04.02.2019</td>
+                        <td>opóźniony 20min</td>
+                    </tr>
+                    <tr class="odwolany">
+                        <td>Warszawa</td>
+                        <td>Oslo</td>
+                        <td>23.07.2018</td>
+                        <td>odwołany</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="reservation">
+                <a id="rezerwuj-lot"><header>Rezerwacja lotu</header></a>
+                <div class="formularz">
+                    Skąd:
+                    <select class="skad" name="skad">
+                        <option value="bruksela">Bruksela</option>
+                        <option value="karlsruhe">Karlsruhe</option>
+                        <option value="katowice">Katowice</option>
+                        <option value="krakow">Kraków</option>
+                        <option value="lwow">Lwów</option>
+                        <option value="paryz">Paryż</option>
+                        <option value="rzym">Rzym</option>
+                        <option value="warszawa">Warszawa</option>
+                    </select>
+                    Dokąd:
+                    <select class="dokad" name="dokad">
+                        <option value="bruksela">Bruksela</option>
+                        <option value="karlsruhe">Karlsruhe</option>
+                        <option value="katowice">Katowice</option>
+                        <option value="krakow">Kraków</option>
+                        <option value="lwow">Lwów</option>
+                        <option value="paryz">Paryż</option>
+                        <option value="rzym">Rzym</option>
+                        <option value="warszawa">Warszawa</option>
+                    </select>
+                    Imię:
+                    <input type="text" id="fname" name="fname">
+                    Nazwisko:
+                    <input type="text" id="lname" name="lname">
+                    Data:
+                    <input type="date">
+                    <input type="submit" value="Rezerwuj" class="submit" onclick="rezerwuj()">
+                    <input type="reset" value="Resetuj" class="reset" id="reset" onclick="resetuj()">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            projekt studencki, Marta Markocka, 2020
+        </footer>
+
+        <div class="confirm" id="confirm"></div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

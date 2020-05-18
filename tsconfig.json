@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "lib": ["es2016", "dom"],
+    },
+    "files": [
+        "main.ts",
+        "lot1.ts",
+        "test.ts"
+    ]
+  }

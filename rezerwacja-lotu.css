@@ -1,0 +1,92 @@
+.rezerwacja-lotu {
+    display: flex;
+    flex-direction: column;
+}
+
+.formularz {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    font-size: 18px;
+    font-family: arial, sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: rgb(39, 170, 226);
+    padding: 5%;
+}
+
+input, select {
+    display: flex;
+    background-color: rgb(251, 253, 253);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: arial, sans-serif;
+    color: rgb(153, 153, 153);
+    padding: 2%;
+    margin-bottom: 9%;
+    border: 2px solid rgb(217, 236, 252);
+    width: 90%;
+    text-align: left;
+}
+
+select {
+    width: 95%;
+}
+
+.submit, .reset {
+    background-color: rgb(176, 220, 255);
+    border: none;
+    margin-top: 10%;
+    color: rgb(5, 5, 124);
+    padding: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: none;
+}
+
+.reset {
+    pointer-events: auto;
+}
+
+.confirm {
+    position: fixed;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20% 10%;
+    padding: 10%;
+    width: 60%;
+    height: 60%;
+    background-color: rgb(176, 220, 255);
+    opacity: 0.9;
+    font-size: 22px;
+    font-family: arial, sans-serif;
+    color: rgb(5, 5, 124);
+}
+
+@media (min-width: 1000px) {
+    .confirm {
+        margin-top: 10%;
+        height: 40%;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    input, select {
+        font-size: 15px;
+    }
+
+    .formularz {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .confirm {
+        margin-top: 7%;
+        height: 30%;
+        font-size: 40px;
+    }
+}
